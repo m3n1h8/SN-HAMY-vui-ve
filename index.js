@@ -452,3 +452,12 @@ function watchvideo(){
     film.setAttribute("class","film2");
     btnplay.style.display="none";
    }
+
+
+   //
+   //
+     function onmanhchuc(){
+            const manhchuc = document.getElementById("manhchuc");
+            manhchuc.play();
+            
+        }
