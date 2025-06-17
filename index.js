@@ -322,13 +322,10 @@ cake.addEventListener("click", burnfire);
 //
 //cuộn đến vị trí quà
 function scrolltogift(){
-   // document.querySelector(".giftbox").scrollIntoView({
-  //      behavior: "smooth",
-  //      start: "block",
-   // });
+
     backgroundmusic.play();
-    backgroundmusicicon.name="volume-high-outline";
-    backgroundmusicicon.onclick= offmusic
+    backgroundmusicicon.volume=1;
+   // backgroundmusicicon.onclick= offmusic
 }
 
 //
