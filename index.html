@@ -1,11 +1,462 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="Sinh nhật Kly 🎉" />
+    <meta property="og:description" content="Trang web kỷ niệm sinh nhật của Kly do Mạnh làm ❤️" />
+    <meta property="og:image" content="https://m3n1h8.github.io/bithday-kly/anh-banh-sn.png" />
+    <meta property="og:url" content="https://m3n1h8.github.io/bithday-kly/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="website" />
+
+
+    
+    <!--tích hợp AOS cuộn trang-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+    
+    #balloon-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -100px;
+      width: 130px;
+      height: 190px;
+      background-color: red;
+      border-radius: 50% 50% 50% 50%;
+      animation: floatUp 5s linear forwards;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
+    footer{
+        
+    background:#EA961A;
+    border-radius: 40px 0 px 0; 
+    padding: 50px;
+    
+    }
+  </style>
+    <title>HAPPY BITHDAY KHÁNH LY ❤️</title>
 </head>
 <body>
-    hello world
+    
+    <div class="container">
+        <div class="layoutcontainer">
+            <div class="videobox">
+                <button onclick="hide()" class="btnhide">X</button>
+                <video  controls>
+                    <source src="lv_7401923482826591506_20250521205935.mp4" type="video/mp4">
+                                
+                </video>
+            </div>
+        </div>    
+        <!--đầu trang-->
+        <header>
+            <img src="ảnh nền.jpg" class="headphoto" >
+            
+            <h1 data-aos="fade-up-right">Hôm nay <br>là  sinh nhật <br>Khánh Ly</h1>
+            <p class="headp" data-aos="fade-up-left">chúc cậu sinh nhật vui vẻ
+
+            </p>
+            <button onclick="scrolltogift()">BẬT NHẠC <span> <ion-icon name="musical-notes-outline" id="musicicon"></ion-icon></span></button>
+        
+           
+
+        </header>
+        <h1 class="title">VÀ CUỐI CÙNG <br> NGÀY ẤY CŨNG TỚI </h1>
+        <P class="titlep">30/5/2025</P>
+
+ <!--thân trang-->
+       <audio autoplay loop id="backgroundmusic" >
+        <source src="Chọn Gì_ Chọn ĐI!  Music Video Say Yes - OgeNus và PiaLinh.mp3" type="audio/mpeg"></audio>
+         
+        <ion-icon name="volume-mute-outline" id="backgroundmusicicon"></ion-icon>
+
+        <audio  loop  id="musicpiano" >
+        <source src="letter piano.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio  id="musicKeyboard" >
+        <source src="tiếng_gõ_bàn_phím_chậm_16s.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio  id="musicstarsky" >
+        <source src="Relaxing piano music BEYOND THE NIGHT SKY.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio  id="tiengsong" >
+        <source src="tieng_song_bien_ri_rao_3s.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="body">
+            
+            <div class="bodyinside">
+                <!--phần buổi sáng-->
+                <div class="mornig">
+                    <!--giới thiệu-->
+                <div class="intro">
+                    
+                    <img src="locket4.webp" class="item1"data-aos="flip-up" >
+                    <img src="locket1.webp" class="item2"data-aos="flip-up" >
+                    <img src="locket2.webp" class="item3" data-aos="flip-up" >
+                </div>
+              <!--sở thích-->
+                <p id="introinterst">CÔ ẤY THÍCH NHIỀU THỨ</p>
+                
+                <div class="interest">
+                    <div class="item " id="item2">
+                        <img src="ảnh bún bò huế.jpg" data-aos="fade-right">
+                         <div id="inneriteminterest">
+                            <h2>BÚN BÒ HUẾ </h2>
+                            <p>
+                            Món thích nhất hiện tại 🙂🙂  </p>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="item">
+                        <div id="inneriteminterest">
+                           <h2> ĂN ĐỒ CHIÊN GIÁN</h2>
+                           <p>
+                            Những món ăn vặt như khoai tây chiên, gà rán, xúc xích chiên, bánh rán, bánh bao chiên, bánh mì kẹp thịt chiên giòn là con của ly hết 🍟🍗🌭🧋</p>
+                        </div>
+                        <img src="gà.webp"  data-aos="fade-left">
+                    </div>
+                    <div class="item " id="item2">
+                        <img src="hellokitty.webp" data-aos="fade-right">
+                         <div id="inneriteminterest">
+                            <h2>HELLOKITTY</h2>
+                            <p>
+                            Đây là sở thích của Khánh ly mà mạnh mới biết 🙂🙂 </p>
+                        </div>
+                       
+                        
+                    </div>
+                    <div class="item">
+                        <div id="inneriteminterest">
+                            <h2>BÁNH CỦA MY</h2>
+                            <p>
+                            Vì thích ăn bánh cookie matcha của hà My mà ly thường xuyên cùng Hà my bán bánh🍪🍪🍪 </p>
+                            </div>
+                        <img src="bánh.webp"  data-aos="fade-left">
+                    </div>
+                    
+                </div>
+                
+                
+            <!--phần hộp quà-->
+                <div class="giftbox" >
+                    <P>Gửi Khánh Ly món quà </P>
+                    <img src="ảnh hộp quà tách nền (1).webp" class="gift" onclick="watchvideo()" data-aos="zoom-in-up" data-aos-duration="2000">
+                </div>
+            <!--đồng hồ đếm ngược-->
+            
+            
+                <p class="introcountdown">Chỉ một chút nữa thôi</p>
+                <div class="countdown">
+                     <div class="overlay"></div>
+                     <div class="contentborder"></div>
+                     <div class="content">
+                        
+                        <div>SAVE this DATE</div>
+                        <span class="time" >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire1"  >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire2" >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire3" >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire4" >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire5" >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire6" >
+                            <img src="ngọn-lửa-tách-nền.webp"  id="fire7" >    
+                            <img src="ảnh-bánh-sinh-nhật-ko-nến-tách-nền.webp" id="cake">
+                            <button id="notify" onclick="burnfire()">THẮP NẾN</button>
+                            <p id="reverseclock">đồng hồ đếm ngược</p>
+                            <p id="countdownhour"></p>
+                        </span>
+                     </div>   
+                           
+                </div>
+            
+
+            
+            
+            <!--phần dẫn đến đoạn lắng đọng-->
+                <div class="loidan">“Nhưng sinh nhật không chỉ là nến, là quà…
+                Đó còn là dịp để nhớ về những điều mình từng đi qua cùng nhau.”</div>
+                </div>
+    
+            
+     <!--phần hoàng hôn-->
+                <div class="sunset">
+                    <div class="introsunset">có những điều ko nói ra vì nghĩ sẽ còn dịp khác ...<br>Nhưng tuổi 17 không chờ ai.Nên mình nói lại những kỉ niệm của bọn mình và cả những suy nghĩ của mình nữa</div>
+
+
+
+                    <div class="kiniembox">
+                        <h2 class="kiniemintro">Từ khi học cùng nhau đến bây giờ <br> bọn mình đã có bao kỉ niệm</h2>
+                        <div class="kiniem">
+                            <img src="ảnh kẹp giấy đen.png" alt="" style="position: absolute;top: -100px;
+                            left:45%;width:170px;">
+                
+                            <div class="anhkiniem">
+                                <img src="ảnh 2 hs ko màu.png" alt=""> <P>ngày đầu đi học</P></div>
+                            <div class="loike-kiniem-box loike-kiniem-box1">
+                                <h2 class="tieude-loike-kiniem">LẦN ĐẦU GẶP MẶT</h2>
+                                <p class="nd-loike-kiniem">
+                                    lúc đó khi lần đầu gặp mặt mình nghĩ my có đôi mắt rất đẹp , nhưng tự dưng my bảo " m nìn cái j",cảm xúc của mình lúc ấy như bị tuột giốc không phanh . sau này mới biết my là ng rất vui tính
+                                </p>
+                            </div>
+                        
+                            
+                        </div>
+                        <div class="day"></div>
+
+                        <div class="kiniem">
+                            <img src="ảnh kẹp giấy đen.png" alt="" style="position: absolute;top: -100px;
+                            left:45%;width:170px;">
+                            <div class="anhkiniem"><img src="ảnh phắc.jpg" alt=""><P>MY lúc phắc </P></div>
+                            <div class="loike-kiniem-box loike-kiniem-box2">
+                                <h2 class="tieude-loike-kiniem ">THƯỜNG XUYÊN PHẮC BẠN</h2>
+                                <p class="nd-loike-kiniem">
+                                    hồi lớp 10 thì đây là trò tủ của my rồi .chuyên đi phắc ng khác rồi cười. bây giờ cũng thế chỉ là thêm trò kéo khóa cặp, và còn kinh doanh bán bánh nữa 
+                                </p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="day"></div>
+                        <div class="kiniem">
+                            <img src="ảnh kẹp giấy đen.png" alt="" style="position: absolute;top: -100px;
+                            left:45%;width:170px;">
+                             <div class="anhkiniem">
+                                <img src="ảnh lai nhau.jpg" alt="">
+                                <P>tôi chở my về</P>
+                                
+                            </div>
+                            <div class="loike-kiniem-box loike-kiniem-box3">
+                                    <h2 class="tieude-loike-kiniem  ">MY BỊ BỎ KHỎI XE</h2>
+                                    <p class="nd-loike-kiniem">
+                                        lúc đó khi đang đi về thì thấy 1 ng quen quen . có khi là Hà My nên tôi quay lại xem và cũng ko ngờ là hà my thật. ko ngờ my lại gặp phải truyện éo le như vậy nữa "my bị em bỏ lại khi xuống xe lấy lược" .mấy hôm sau ko thấy 2 ng lai nhau nữa ko biết my đã làm j em ấy r
+                                    </p>
+                            </div>
+                            
+                        </div>
+                        <div class="day"></div>
+                        <div class="kiniem" >
+                            <img src="ảnh kẹp giấy đen.png" alt="" style="position: absolute;top: -100px;
+                            left:45%;width:170px;">
+                             <div class="anhkiniem"><img src="ảnh nhóm bạn 5 ng ko màu.png" alt=""><P>nhóm chúng ta</P></div>
+                            <div class="loike-kiniem-box loike-kiniem-box4">
+                                <h2 class="tieude-loike-kiniem ">NHÓM BẠN 5 NGƯỜI</h2>
+                                <p class="nd-loike-kiniem">
+                                    không biết do đc xếp ngồi cùng bàn từ lớp 10 hay sao mà hội bạn của mình lại có 5 người. trong đó có Hà My người đã học là rất chăm học.chỉ là thỉnh thoảng   
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div  class="thulong-box">
+                        
+                        
+                       <img src="mảnh giấy thư tay.png" class="thulong" alt="">
+                    </div>
+                </div>
+    <!--phần đêm đầy  ánh sao-->
+                <div class="starSky">
+                      
+                    
+                    <!--phần tivi kí ức-->
+                    <div class="tivi-box">
+                        <span class="the-tivi">
+                            <img src="ảnh tivi 2.png"  class="tivi">
+
+                            <div class="man-hinh">
+                                <img src="ảnh thước phim dài.png" class="film">
+                                <button class="btnplay" onclick="playvideokiuc()">▶️</button>
+
+                            </div>
+                            <div class="nen-man-hinh"></div>
+                            
+                        </span>
+                    </div>
+
+
+                    <div class="loi-chuc-box">
+                        <div class="loi-chuc" data-aos="zoom-in-up"data-aos-anchor-placement="top-bottom">
+                            
+                                <p style="color: aliceblue;">lâm chọn sao màu trắng
+
+                                </p>    
+                                <svg  width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <filter id="glow">
+                                        <feGaussianBlur stdDeviation="10" result="blur" />
+                                        <feMerge>
+                                            <feMergeNode in="blur" />
+                                            <feMergeNode in="blur" />
+                                            <feMergeNode in="SourceGraphic" />
+                                        </feMerge>
+                                        </filter>
+                                    </defs>
+
+                                    <polygon
+                                        points="50,5 61,38 95,38 67,59 78,91 50,70 22,91 33,59 5,38 39,38"
+                                        fill="white"
+                                        filter="url(#glow)"
+                                    />
+                                    </svg>
+                            
+
+                        </div>
+                        <div class="loi-chuc" data-aos="zoom-in-up"data-aos-anchor-placement="top-bottom">
+                            <p style="color: aliceblue;">lâm chọn sao màu trắng
+
+                            </p>
+                            <svg class="star star1"  width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <filter id="glow">
+                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                    </filter>
+                                </defs>
+
+                                <polygon
+                                    points="50,5 61,38 95,38 67,59 78,91 50,70 22,91 33,59 5,38 39,38"
+                                    fill="gold"
+                                    filter="url(#glow)"
+                                />
+                                </svg>
+
+                        </div>
+                        <div class="loi-chuc"data-aos="zoom-in-up"data-aos-anchor-placement="top-bottom">
+                            <p style="color: aliceblue;">mạnh chọn sao màu vàng</p>
+                            <svg class="star star2"  width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <filter id="glow">
+                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                    </filter>
+                                </defs>
+
+                                <polygon
+                                    points="50,5 61,38 95,38 67,59 78,91 50,70 22,91 33,59 5,38 39,38"
+                                    fill="gold"
+                                    filter="url(#glow)"
+                                />
+                                </svg>
+
+                        </div>
+                        <div class="loi-chuc" data-aos="zoom-in-up"data-aos-anchor-placement="top-bottom">
+                            <p style="color: aliceblue;">my chọn sao màu vàng</p>
+                            <svg  width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <filter id="glow">
+                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                    </filter>
+                                </defs>
+
+                                <polygon
+                                    points="50,5 61,38 95,38 67,59 78,91 50,70 22,91 33,59 5,38 39,38"
+                                    fill="gold"
+                                    filter="url(#glow)"
+                                />
+                                </svg>
+
+                        </div>
+                    </div>
+
+                     <!--phần chữ cuối cùng-->
+                    <div class="final-text" id="finalText" >
+                        hellokitty
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+
+
+        
+ <!--đuôi trang-->
+        <footer>
+             <ul>
+                
+                <li>Địa chỉ trụ sở: Tân An, Thanh Hà, Hải Dương</li>
+                <li>☎️ Điện thoại: 0327255938</li>
+                <li>📧 Email: ducm5523@gmail.com</li>
+                <li>🌐 Liên hệ: 
+                    <ul>
+                        <li>Fabook</li>
+                        <li>Tiktok</li>
+                        <li>Instagram</li>
+                    </ul>
+                </li>
+                <li>Bản quyền thuộc về tcml.com</li>
+               
+            </ul>
+        </footer>
+    </div>
+
+
+
+    <div id="balloon-container"></div>
+<!--tích hợp gsap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+
+
+    <!--viết javascript-->
+    <script src="index.js"></script>
+    <!-- tích hợp ionicon -->
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+    <!--tích hợp AOS cuộn trang-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();</script>
+
+
+
+    
+
 </body>
 </html>
+
+
+
