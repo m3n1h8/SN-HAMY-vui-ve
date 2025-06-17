@@ -230,8 +230,8 @@
                             <div class="anhkiniem"><img src="ảnh phắc.jpg" alt=""><P>MY lúc phắc </P></div>
                             <div class="loike-kiniem-box loike-kiniem-box2">
                                 <h2 class="tieude-loike-kiniem ">THƯỜNG XUYÊN PHẮC BẠN</h2>
-                                <p class="nd-loike-kiniem">
-                                    hồi lớp 10 thì đây là trò tủ của my rồi .chuyên đi phắc ng khác rồi cười. bây giờ cũng thế chỉ là thêm trò kéo khóa cặp, và còn kinh doanh bán bánh nữa 
+                                <p class="nd-loike-kiniem nd-loike-kiniem2">
+                                    hồi lớp 10 thì đây là trò tủ của my rồi .chuyên đi phắc ng khác rồi cười. bây giờ cũng thế chỉ là thêm trò kéo khóa cặp, và còn kinh doanh bán bánh nữa .Hơn nữa có 1 chuyện động trời...<button onclick="bip()" class="nut-bip">xem thêm</button>
                                 </p>
                             </div>
                             
@@ -422,6 +422,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init(); </script>
+    <script> 
+        function bip(){
+            const ndloikekiniem2 = document.querySelector('.nd-loike-kiniem2');
+            ndloikekiniem2.innerHTML = "hồi lớp 10 thì đây là trò tủ của my rồi .chuyên đi phắc ng khác rồi cười. bây giờ cũng thế chỉ là thêm trò kéo khóa cặp, và còn kinh doanh bán bánh nữa .Hơn nữa có 1 chuyện động trời... <br>  đó là ko có j cả hahah trả đũa MY phắc you";
+            const nutbip = document.querySelector('.nut-bip');
+            nutbip.style.display = 'none'; // ẩn nút "xem thêm"
+        }
+    </script>
    
 
 

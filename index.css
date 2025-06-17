@@ -262,10 +262,11 @@ background-position: center center;
 }
 .interest .item img{
     width: 30%;
+    aspect-ratio: 1/1;
     
     
     border-radius: 20px;
-    margin: 3%;
+    margin: 5px;
     background-color:#efede5 ;
     box-shadow: 2px 2px 5px #4d290a;
 }
@@ -514,7 +515,7 @@ background-position: center center;
     margin-top: 900px;
     margin-bottom: 1500px;
     height: 700px;
-    padding-top: 200px;
+    padding-top: 300px;
     
     
     text-align: center;
@@ -622,6 +623,11 @@ background-position: center center;
     width: 65%;
     
      
+}
+.nut-bip{
+    width: 100px ;
+    height: 50px;
+    font-size: 20px;
 }
 .thulong-box{
     display: flex;
@@ -840,7 +846,7 @@ audio{
   text-align: center;
   max-width: 600px;
   
-  margin: 500px auto ;
+  margin: 900px auto ;
   padding-bottom: 500px;
   
   opacity: 0;           /* bắt đầu tàng hình */
@@ -922,7 +928,7 @@ audio{
 .film2{
     height: 100%;
     transform: translateX(-3700px);
-    transition: 25s linear;
+    transition: 30s linear;
     
 }
 .btnplay{
