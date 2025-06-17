@@ -513,7 +513,7 @@ background-position: center center;
 
 .loidan{
     margin-top: 900px;
-    margin-bottom: 1500px;
+    margin-bottom: 3000px;
     height: 700px;
     padding-top: 300px;
     
@@ -633,13 +633,20 @@ background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1400px;
+    height: 2500px;
+    
+    
+    
+    
+    transform: translateZ(10px);
     
 }  
 
 .thulong{
     width: 60%;
     max-width: 1000px;
+    position: absolute;
+    top: 500px;
 
     
     
@@ -873,7 +880,8 @@ audio{
     background-size: cover;
     
     border-radius: 100px 100px 0 0;
-    margin-top: -600px;
+   /* margin-top: -600px;*/
+    transform: translateY(-100px);
     border: none;
 
 }
