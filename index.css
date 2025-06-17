@@ -511,8 +511,11 @@ background-position: center center;
 /*phần lời dẫn*/
 
 .loidan{
-    margin-top: 500px;
-    height: 400px;
+    margin-top: 900px;
+    margin-bottom: 1500px;
+    height: 700px;
+    padding-top: 200px;
+    
     
     text-align: center;
     font-size: 50px;
@@ -954,10 +957,11 @@ audio{
     background-size: 300%;
     position: absolute;
     bottom: 0;
-    top: 7000px;
+    top: 9000px;
     right: 0;
     left: 0;
     z-index: -10;
+   
 
 }
 
