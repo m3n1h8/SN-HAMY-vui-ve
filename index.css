@@ -155,9 +155,10 @@ background-position: center center;
    
 
 .bodyinside{
-    background-color: #5E9431;
+    
     margin: 10px;
     padding-bottom: 0;
+    position: relative;
     
 }
     /*phần intro*/
@@ -511,7 +512,7 @@ background-position: center center;
 
 .loidan{
     margin-top: 500px;
-    
+    height: 400px;
     
     text-align: center;
     font-size: 50px;
@@ -856,7 +857,7 @@ audio{
 .starSky{
     background: burlywood;
     width: 100%;
-    
+    height: 4500px;
     padding: 0;
     background-image: url("ảnh trời sao.jpg");
     background-repeat: no-repeat;
@@ -864,6 +865,7 @@ audio{
     
     border-radius: 100px 100px 0 0;
     margin-top: -600px;
+    border: none;
 
 }
 
@@ -871,7 +873,7 @@ audio{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
 
     height: 2000px
     
@@ -946,6 +948,17 @@ audio{
     
 }.star2{
     color: white
+}
+.loicuoi{
+    background-image:url("ảnh trời sao.jpg") ;
+    background-size: 300%;
+    position: absolute;
+    bottom: 0;
+    top: 7000px;
+    right: 0;
+    left: 0;
+    z-index: -10;
+
 }
 
 

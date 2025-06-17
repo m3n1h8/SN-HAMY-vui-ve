@@ -52,8 +52,6 @@ function thayNhac() {
 
 // dòng cuối hiện lên
 gsap.registerPlugin(TextPlugin);
-
-  
   const finalMessage = 
 `Và nếu sau này có lúc cậu thấy lạc lối…
 Hãy quay lại đây, và nhớ rằng:
@@ -73,8 +71,6 @@ Hãy quay lại đây, và nhớ rằng:
       }
     );
   }
-
- 
   gsap.utils.toArray("#finalText").forEach(el => {
     ScrollTrigger.create({
       trigger: el,
@@ -89,6 +85,42 @@ Hãy quay lại đây, và nhớ rằng:
     });
   });
 
+    const loidanmessage = 
+`“Nhưng sinh nhật không chỉ là nến, là quà…
+                Đó còn là dịp để nhớ về những điều mình từng đi qua cùng nhau.”`;
+
+ 
+  function showloidan() {
+    
+    gsap.to("#loidan", { opacity: 1, duration: 1.5, ease: "power2.inOut" });
+
+    // 2. Chạy hiệu ứng typewriter
+    gsap.fromTo("#loidan",
+      { text: "" },
+      { text: loidanmessage, duration: 15, ease: "none",
+        delay: 1,          // chờ fade in xong
+        
+      }
+    );
+  }
+  gsap.utils.toArray("#loidan").forEach(el => {
+    ScrollTrigger.create({
+      trigger: el,
+      start: "top 80%",
+      once: true,
+      onEnter: ()=>{
+        showloidan()
+        musicPiano.volume= 0.7;
+        musicKeyboard.play();
+        musicKeyboard.currrent
+      }
+    });
+  });
+
+
+
+
+
 
   //cuộn phần hoàng hôn lên
 
@@ -96,7 +128,7 @@ Hãy quay lại đây, và nhớ rằng:
      scrollTrigger:{
        trigger: ".sunset",
        toggleActions:"restart pause reverse pause ",
-       start: "top 60%",
+       start: "top 80%",
        end: "top 0px",
        scrub: 1,
        pin: ".loidan",
