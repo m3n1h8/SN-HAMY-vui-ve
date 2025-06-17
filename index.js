@@ -114,7 +114,7 @@ Hãy quay lại đây, và nhớ rằng:
      end: "top 0px",
      pinSpacing: false,
    },
-   x: 150,
+   x: 130,
    duration:1,
 
   })
@@ -126,7 +126,7 @@ Hãy quay lại đây, và nhớ rằng:
      end: "top 0px",
      pinSpacing: false,
    },
-   x: 150,
+   x: 130,
    duration:1,
 
   })
@@ -138,7 +138,7 @@ Hãy quay lại đây, và nhớ rằng:
      
      pinSpacing: false,
    },
-   x: 150,
+   x: 130,
    duration:0.4,
 
   })
@@ -150,7 +150,7 @@ Hãy quay lại đây, và nhớ rằng:
      end: "top 0px",
      pinSpacing: false,
    },
-   x: 150,
+   x: 130,
    duration:1,
 
   })
