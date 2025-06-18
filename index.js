@@ -380,13 +380,15 @@ notify.addEventListener("click",baloon);
     summary4.addEventListener("click",showloichuckly);
 //
 // ẩn video
-function hide(){ video.pause();
+function hide(){ 
+    video.pause();
+    backgroundmusic.volume= 1;
     layoutcontainer.style.display="none";
     backgroundmusicicon.style.zIndex="110"
     
     layoutcontainer.removeEventListener("click",hide); 
    
-    backgroundmusic.play();
+    
     backgroundmusicicon.name="volume-high-outline";
     backgroundmusicicon.onclick= offmusic
 } 
@@ -395,12 +397,11 @@ function hide(){ video.pause();
 function watchvideo(){
     layoutcontainer.style.display="flex";
     layoutcontainer.style.zIndex="111";
-  
+    ;
+    backgroundmusic.volume= 0.4;
     videobox.style.display="flex"; 
-   video.volume=0;
     setTimeout(()=>{video.play()}, 1000);
-    
-   
+
     AOS.refresh(); 
 }
 //
