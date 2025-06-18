@@ -633,11 +633,7 @@ background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2500px;
-    
-    
-    
-    
+    height: 2000px;
     transform: translateZ(10px);
     
 }  
@@ -880,7 +876,7 @@ audio{
     background-size: cover;
     
     border-radius: 100px 100px 0 0;
-   /* margin-top: -600px;*/
+    margin-top: -900px;
     transform: translateY(-100px);
     border: none;
 
@@ -971,7 +967,7 @@ audio{
     background-size: 300%;
     position: absolute;
     bottom: 0;
-    top: 9000px;
+    top: 10000px;
     right: 0;
     left: 0;
     z-index: -10;

@@ -53,9 +53,9 @@ function thayNhac() {
 // dòng cuối hiện lên
 gsap.registerPlugin(TextPlugin);
   const finalMessage = 
-`Và nếu sau này có lúc cậu thấy lạc lối…
-Hãy quay lại đây, và nhớ rằng:
-Đã từng có người – chỉ cần một mình là đủ – tin cậu vô điều kiện.`;
+`Và nếu sau này có lúc My thấy lạc lối…
+Hãy quay lại đây, và nhớ rằng :
+Đã từng có người – luôn ủng hộ cậu.`;
 
  
   function showFinalText() {
@@ -128,23 +128,24 @@ Hãy quay lại đây, và nhớ rằng:
      scrollTrigger:{
        trigger: ".sunset",
        toggleActions:"restart pause reverse pause ",
-       start: "top 80%",
+       start: "top 140%",
        end: "top 0px",
-       scrub: 1,
-       pin: ".loidan",
-       pinSpacing: false,
+       scrub: true,
+      // scrub: 1,
+     //  pin: ".loidan",
+     //  pinSpacing: false,
      },
-     y: -500,
-     duration: 4,
+     y: -900,
+     duration: 1,
    })
 
   gsap.to(".loike-kiniem-box1",{  
    scrollTrigger:{
      trigger: ".loike-kiniem-box1",
      toggleActions:"restart pause reverse pause ",
-     start: "top 80%",
+     start: "top 100%",
      end: "top 0px",
-     pinSpacing: false,
+    //  pinSpacing: false,
    },
    x: 130,
    duration:1,
@@ -154,9 +155,8 @@ Hãy quay lại đây, và nhớ rằng:
    scrollTrigger:{
      trigger: ".loike-kiniem-box2",
      toggleActions:"restart pause reverse pause ",
-     start: "top 80%",
+     start: "top 100%",
      end: "top 0px",
-     pinSpacing: false,
    },
    x: 130,
    duration:1,
@@ -166,9 +166,9 @@ Hãy quay lại đây, và nhớ rằng:
    scrollTrigger:{
      trigger: ".loike-kiniem-box3",
      toggleActions:"restart pause reverse pause ",
-     start: "top 70%",
+     start: "top 100%",
      
-     pinSpacing: false,
+    //  pinSpacing: false,
    },
    x: 130,
    duration:0.4,
@@ -178,9 +178,8 @@ Hãy quay lại đây, và nhớ rằng:
    scrollTrigger:{
      trigger: ".loike-kiniem-box4",
      toggleActions:"restart pause reverse pause ",
-     start: "top 80%",
+     start: "top 100%",
      end: "top 0px",
-     pinSpacing: false,
    },
    x: 130,
    duration:1,
@@ -192,14 +191,12 @@ Hãy quay lại đây, và nhớ rằng:
      scrollTrigger:{
        trigger: ".starSky",
        toggleActions:"restart pause reverse pause ",
-       start: "top 60%",
+       start: "top 160%",
        end: "top 0px",
-       scrub: 1,
-       pin: ".sunset",
-       pinSpacing: false,
+       scrub: true,
      },
-     y: -500,
-     duration: 4,
+     y: -1000,
+     duration: 1,
    })
 
 ScrollTrigger.create({
@@ -461,3 +458,20 @@ function watchvideo(){
             manhchuc.play();
 
         }
+      function onlamchuc(){
+            const lamchuc = document.getElementById("lamchuc");
+            lamchuc.play();
+
+        }
+      function onlychuc(){
+            const lychuc = document.getElementById("lychuc");
+            lychuc.play();
+
+        }
+
+      function onhoachuc(){
+            const hoachuc = document.getElementById("hoachuc");
+            hoachuc.play();
+
+        }
+
