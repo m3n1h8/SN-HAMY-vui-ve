@@ -74,7 +74,7 @@ Hãy quay lại đây, và nhớ rằng :
   gsap.utils.toArray("#finalText").forEach(el => {
     ScrollTrigger.create({
       trigger: el,
-      start: "top 80%",
+      start: "top 100%",
       once: true,
       onEnter: ()=>{
         showFinalText()

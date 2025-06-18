@@ -624,6 +624,9 @@ background-position: center center;
     
      
 }
+.nd-loike-kiniem{
+    font-size: 30px;
+}
 .nut-bip{
     width: 100px ;
     height: 50px;
@@ -955,8 +958,8 @@ audio{
 
 }
 .loi-chuc svg:hover{
-    color: #5E940D;
-    transform: scale(1.1);
+    stroke: #5E9431;
+    transform: scale(1.2);
     transition: 0.3s;
     
 }.star2{
